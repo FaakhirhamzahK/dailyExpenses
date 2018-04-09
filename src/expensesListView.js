@@ -71,7 +71,7 @@ class ListView extends Component {
       if(value === Constants.UPDATE_DATA){
         newExpenseDetails = this.state.data[this.state.editedIndex];
         newExpenseDetails.amount = this.state.amount;
-        newExpenseDetails.tags = this.state.selectedTag;
+        newExpenseDetails.tags = (this.state.selectedTag === "") ? this.state.selectedTag : this.state.tags[0].tags;
         newExpenseDetails.description = this.state.description;
       }else{
         var date = new Date();
@@ -79,7 +79,7 @@ class ListView extends Component {
          newExpenseDetails = {
           "id": this.state.data.length + 1,
           "amount": this.state.amount,
-          "tags": this.state.selectedTag,
+          "tags": (this.state.selectedTag === "") ? this.state.selectedTag : this.state.tags[0].tags,
           "description": this.state.description,
           "createdDate": createdDate
         };
@@ -132,10 +132,17 @@ class ListView extends Component {
         <p className="App App-header App-title">Daily Expenses</p>
         <div className="form">
           <button className="btn btn-right" onClick={this.openNewPopup}> Add Expenses </button>
-          <table class="responstable">
+          <table class="table">
+          <tr className="thead">
+            <th>Amount</th>
+            <th>Tag</th>
+            <th>Date</th>
+          </tr>
           {this.state.data.length > 0 && this.state.data.map((row, index) =>
-            <tr className="imglist" key={row.id}>
-                <th>{row.createdDate + " - " + row.tags}</th>
+            <tr key={row.id}>
+                <th>{row.amount}</th>
+                <th>{row.tags}</th>
+                <th>{row.createdDate}</th>
                 <th><button className="btn-display" onClick={this.editList.bind(this, index)}>Edit</button></th>
                 <th><button className="btn-display" onClick={this.deleteExpense.bind(this, index)}>Delete</button></th>
             </tr>

@@ -118,7 +118,7 @@
   padding-bottom: 10px;
 }
 
-.responstable {
+.table {
   margin: 1em 0;
   width: 100%;
   overflow: hidden;
@@ -127,6 +127,10 @@
   border-radius: 10px;
 }
 
+.thead {
+  background-color: #b2beb5;
+  color: white;
+}
 
 
 @keyframes App-logo-spin {
