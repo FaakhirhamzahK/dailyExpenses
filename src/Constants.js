@@ -8,4 +8,5 @@ export class Constants{
     static TAGS_DETAIL_URL = "https://api.myjson.com/bins/13oaqr";
     static EXPENSE = "expenses";
     static TAGS = "tags";
+    static PLEASE_ENTER_A_VALID_AMOUNT = "Please enter a valid amount";
 }
