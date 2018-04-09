@@ -1,0 +1,125 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 30px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.backdrop{
+  position: 'fixed';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: 'rgba(0,0,0,0.3)';
+  padding: 50;
+}
+
+.form {
+  background-color: #F6F6F2;
+  border: 1px solid #D6DAC4;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+  margin-top: -1px;
+  padding: 10px;
+  width: 70%;
+  margin: auto;
+  min-height: 35px;
+	border-radius: 5px;
+}
+
+.btn-right {
+  float: right;
+}
+
+.btn {
+	display: inline-block;
+	color: #666;
+	background-color: #eee;
+	text-transform: uppercase;
+	font-size: 12px;
+	padding: 8px 25px;
+	border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-bottom-width: 3px;
+}
+
+.btn-display {
+  padding: 4px 18px;
+  border-radius: 7px;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-bottom-width: 1px;
+}
+
+.btn-display:hover {
+  border-color:rgba(97, 191, 191, 0.5);
+}
+
+.label {
+  padding:10px 60px 10px 10px;
+  color:#999999;
+  font-weight:bold;
+  display:inline-block;
+  width:100px;
+}
+
+.btn:hover {
+  background-color: #e3e3e3;
+  border-color: rgba(0,0,0,0.5);
+}
+
+.input {
+  width:120px;
+  height:8px;
+  border-radius:4px;
+  border:1px solid #999999;
+  font-size:15px;
+  padding:10px;
+  color:#999999
+}
+
+.dropdown {
+  width: 144px;
+  height: 29px;
+  border-radius: 4px;
+  border: 1px solid #999999;
+  font-size: 15px;
+  color: #999999;
+}
+
+.center {
+  text-align: center;
+}
+
+.close-btn {
+  float: right;
+  margin-top: -145px;
+  margin-right: -23px;
+}
+
+.padding-down {
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
